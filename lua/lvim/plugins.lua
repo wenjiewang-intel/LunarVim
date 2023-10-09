@@ -58,6 +58,20 @@ local core_plugins = {
     cmd = "Telescope",
     enabled = lvim.builtin.telescope.active,
   },
+  -- {
+  --   "nvim-telescope/telescope.nvim",
+  --   dependencies = {
+  --     {
+  --         "nvim-telescope/telescope-live-grep-args.nvim" ,
+  --         -- This will not install any breaking changes.
+  --         -- For major updates, this must be adjusted manually.
+  --         version = "^1.0.0",
+  --     },
+  --   },
+  --   config = function()
+  --     require("telescope").load_extension("live_grep_args")
+  --   end
+  -- }
   { "nvim-telescope/telescope-fzf-native.nvim", build = "make", lazy = true, enabled = lvim.builtin.telescope.active },
   -- Install nvim-cmp, and buffer source as a dependency
   {
@@ -356,6 +370,28 @@ local core_plugins = {
     enabled = lvim.builtin.bigfile.active,
     event = { "FileReadPre", "BufReadPre", "User FileOpened" },
   },
+
+  -- {
+  --   "edluffy/specs.nvim",
+  --   lazy = true,
+  --   config = function()
+  --     require("lvim.core.specs").setup()
+  --   end,
+  --   enabled = lvim.builtin.specs.active,
+  --   event = "VimEnter",
+  --   cmd = "Specs",
+  -- },
+
+  {
+    'phaazon/hop.nvim',
+    branch = 'v2', -- optional but strongly recommended
+    config = function()
+      -- you can configure Hop the way you like here; see :h hop-config
+      require 'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+    end,
+    event = "VimEnter",
+    lazy=true,
+  }
 }
 
 local default_snapshot_path = join_paths(get_lvim_base_dir(), "snapshots", "default.json")

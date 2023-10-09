@@ -66,6 +66,16 @@ local defaults = {
     ["]q"] = ":cnext<CR>",
     ["[q"] = ":cprev<CR>",
     ["<C-q>"] = ":call QuickFixToggle()<CR>",
+
+    -- Navigate Buffer
+    ["[b"] = "<cmd>BufferLineCyclePrev<cr>",
+    ["]b"] = "<cmd>BufferLineCycleNext<cr>",
+
+    ["[c"] = "^",
+    ["]c"] = "$",
+
+    ["t"] = "<cmd> HopChar1AC <cr>",
+    ["T"] = "<cmd> HopChar1BC <cr>",
   },
 
   term_mode = {

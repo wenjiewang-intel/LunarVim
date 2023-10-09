@@ -296,6 +296,14 @@ M.config = function()
           "<cmd>lua require('telescope.builtin').colorscheme({enable_preview = true})<cr>",
           "Colorscheme with Preview",
         },
+        -- w = {
+        --   "<cmd> lua require('telescope.builtin').live_grep() <cr>",
+        --   "Find Text",
+        -- },
+        w = {
+          "<cmd> lua require('telescope.builtin').grep_string() <cr>",
+          "Find Text in Current Cursor",
+        },
       },
       T = {
         name = "Treesitter",
