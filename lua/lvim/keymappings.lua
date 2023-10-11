@@ -50,18 +50,29 @@ local defaults = {
   normal_mode = {
 
     ["<C-m>"] =  "<cmd>lua vim.lsp.buf.signature_help()<cr>",
+    -- -- Better window movement
+    -- ["<C-h>"] = "<C-w>h",
+    -- ["<C-j>"] = "<C-w>j",
+    -- ["<C-k>"] = "<C-w>k",
+    -- ["<C-l>"] = "<C-w>l",
+
+    -- -- Resize with arrows
+    -- ["<C-Up>"] = "<cmd>resize -2<CR>",
+    -- ["<C-Down>"] = "<cmd>resize +2<CR>",
+    -- ["<C-Left>"] = "<cmd>vertical resize -2<CR>",
+    -- ["<C-Right>"] = "<cmd>vertical resize +2<CR>",
 
     -- Better window movement
-    ["<C-h>"] = "<C-w>h",
-    ["<C-j>"] = "<C-w>j",
-    ["<C-k>"] = "<C-w>k",
-    ["<C-l>"] = "<C-w>l",
+    ["<C-h>"] = "<cmd>SmartCursorMoveLeft<cr>",
+    ["<C-j>"] = "<cmd>SmartCursorMoveDown<cr>",
+    ["<C-k>"] = "<cmd>SmartCursorMoveUp<cr>",
+    ["<C-l>"] = "<cmd>SmartCursorMoveRight<cr>",
 
     -- Resize with arrows
-    ["<C-Up>"] = "<cmd> resize -2<CR>",
-    ["<C-Down>"] = "<cmd> resize +2<CR>",
-    ["<C-Left>"] = "<cmd> vertical resize -2<CR>",
-    ["<C-Right>"] = "<cmd> vertical resize +2<CR>",
+    ["<C-Up>"] = "<cmd>SmartResizeUp<cr>",
+    ["<C-Down>"] = "<cmd>SmartResizeDown<cr>",
+    ["<C-Left>"] = "<cmd>SmartResizeLeft<cr>",
+    ["<C-Right>"] = "<cmd>SmartResizeRight<cr>",
 
     -- Move current line / block with Alt-j/k a la vscode.
     ["<A-j>"] = ":m .+1<CR>==",

@@ -397,6 +397,13 @@ local core_plugins = {
   --   'yamatsum/nvim-cursorline',
 
   -- }
+
+  {
+    'mrjones2014/smart-splits.nvim',
+    version='>=1.0.0',
+    lazy=true,
+    event='VimEnter',
+  },
 }
 
 local default_snapshot_path = join_paths(get_lvim_base_dir(), "snapshots", "default.json")
