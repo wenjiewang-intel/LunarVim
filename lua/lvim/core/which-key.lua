@@ -116,6 +116,7 @@ M.config = function()
       },
       ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
       ["e"] = { "<cmd>NvimTreeToggle<CR>", "Explorer" },
+      ["o"] = { "<cmd>NvimTreeFocus<CR>", "Explore Focus"},
       b = {
         name = "Buffers",
         j = { "<cmd>BufferLinePick<cr>", "Jump" },

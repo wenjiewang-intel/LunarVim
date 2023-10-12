@@ -391,7 +391,12 @@ local core_plugins = {
     end,
     event = "VimEnter",
     lazy=true,
-  }
+  },
+  
+  -- {
+  --   'yamatsum/nvim-cursorline',
+
+  -- }
 }
 
 local default_snapshot_path = join_paths(get_lvim_base_dir(), "snapshots", "default.json")
