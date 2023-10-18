@@ -43,6 +43,8 @@ local defaults = {
     ["<A-Down>"] = "<C-\\><C-N><C-w>j",
     ["<A-Left>"] = "<C-\\><C-N><C-w>h",
     ["<A-Right>"] = "<C-\\><C-N><C-w>l",
+
+    ["<C-k>"] =  "<cmd>lua vim.lsp.buf.signature_help()<cr>"
   },
 
   normal_mode = {

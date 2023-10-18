@@ -1,5 +1,6 @@
 ![lunarvim_logo_dark](https://user-images.githubusercontent.com/59826753/159940098-54284f26-f1da-4481-8b03-1deb34c57533.png)
 
+
 <div align="center"><p>
     <a href="https://github.com/lunarvim/LunarVim/releases/latest">
       <img alt="Latest release" src="https://img.shields.io/github/v/release/LunarVim/LunarVim?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41" />
@@ -40,6 +41,18 @@ An IDE layer for Neovim with sane defaults. Completely free and community driven
 **[<kbd> <br> Contribute <br> </kbd>][Contribute]**
 
 ---
+
+## Install
+
+```bash
+wget https://github.com/neovim/neovim/releases/download/v0.9.4/nvim.appimage
+chmod +x nvim.appimage
+mkdir -p /opt/nvim
+mv nvim.appimage /opt/nvim
+ln -s /opt/nvim/nvim.appiamge /usr/bin/nvim 
+
+LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/wenjiewang-intel/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
+```
 
 ## Showcase
 
