@@ -44,10 +44,13 @@ local defaults = {
     ["<A-Left>"] = "<C-\\><C-N><C-w>h",
     ["<A-Right>"] = "<C-\\><C-N><C-w>l",
 
-    ["<C-k>"] =  "<cmd>lua vim.lsp.buf.signature_help()<cr>"
+    ["<C-m>"] =  "<cmd>lua vim.lsp.buf.signature_help()<cr>",
   },
 
   normal_mode = {
+
+    ["<C-m>"] =  "<cmd>lua vim.lsp.buf.signature_help()<cr>",
+
     -- Better window movement
     ["<C-h>"] = "<C-w>h",
     ["<C-j>"] = "<C-w>j",
