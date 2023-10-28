@@ -303,8 +303,12 @@ M.config = function()
         -- },
         w = {
           "<cmd> lua require('telescope.builtin').grep_string() <cr>",
-          "Find Text in Current Cursor",
+          "Find Text of Current Cursor",
         },
+        u = {
+          "<cmd> Telescope current_buffer_fuzzy_find fuzzy=false case_mode=respect_case <cr>",
+          "Find Text in Current Buffer",
+        }
       },
       T = {
         name = "Treesitter",

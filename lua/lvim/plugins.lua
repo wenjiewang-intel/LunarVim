@@ -404,6 +404,13 @@ local core_plugins = {
     lazy=true,
     event='VimEnter',
   },
+
+  {
+    'iamcco/markdown-preview.nvim',
+    config = function() vim.fn["mkdp#util#install"]() end,
+    ft = { "markdown" },
+    lazy=true,
+  }
 }
 
 local default_snapshot_path = join_paths(get_lvim_base_dir(), "snapshots", "default.json")
